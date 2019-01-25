@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# rvsmr's custom script, forked from LARBS
+
 # Luke's Auto Rice Boostrapping Script (LARBS)
 # by Luke Smith <luke@lukesmith.xyz>
 # License: GNU GPLv3
@@ -207,7 +209,7 @@ putgitrepo "$dotfilesrepo" "/home/$name"
 #sudo -u "$name" vim -E -c "PlugUpdate|visual|q|q" >/dev/null
 
 # Enable services here.
-serviceinit NetworkManager cronie
+serviceinit NetworkManager cronie slim #wakelock
 
 # Most important command! Get rid of the beep!
 systembeepoff
